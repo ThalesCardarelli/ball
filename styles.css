@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin-top: 70px;
+  text-align: center;
+}
+#responses {
+  font-size: 30px;
+  margin-top: -310px;
+}
+
+img {
+  width: 55%;
+  height: 100%;
+  background-size: cover;
+}
+
+#image:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.vinil {
+position:relative;
+background:rgba(255,255,255,0.4);
+width: auto;
+}
+
+.vinil #responses{
+-webkit-transition:all 1.3s ease-out;
+-moz-transition:all 1.3s ease-out;
+-ms-transition:all 1.3s ease-out;
+-o-transition:all 1.3s ease-out;
+transition:all 1.3s ease-out;
+height:50px;
+width:200px;
+position:absolute;
+left:350px;
+top:50%;
+margin-top:-25px;
+background-color: grey;
+}
+.vinil:hover #responses{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+transform:rotate(360deg);
+}

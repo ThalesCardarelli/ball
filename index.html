@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>teste</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+  function suggestion() {
+    idArray = new Array()
+    idArray [1] = "I'm good, tks."
+    idArray [2] = "Not so bad"
+    idArray [3] = "Same old History"
+    idArray [4] = "I'm cold."
+    idArray [5] = "Want some Wine?"
+
+    document.getElementById("image").onmouseover = suggestion;
+    randomParagraph = Math.floor(Math.random()*5);
+
+    document.getElementById("responses").innerHTML = idArray[randomParagraph + 1];
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="vinil">
+      <img id="image" src="vinil2.png" alt="vinil" onmouseover="suggestion()">
+      <p id="responses"> Hi, how are you?</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
